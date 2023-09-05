@@ -1,9 +1,3 @@
-collatz_df <-
-  collatz_df %>%
-  mutate(length = map_dbl(seq, length),
-         parity = ifelse(start %% 2 == 0, "Even", "Odd"),
-         max_val = map_dbl(seq, max)) 
-
 # Top 10 starting integers that produce the longest sequence
 top10longest <-
   collatz_df %>%
